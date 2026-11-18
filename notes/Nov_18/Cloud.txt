@@ -1,0 +1,147 @@
+Windows will not be used more
+Always companies use Linux
+
+WHY?
+AWS --> Cloud Platform
+
+Cloud?
+
+Google
+1 System --> data --> 1
+www.google.com
+2nd day --> 100
+1, 10 
+
+We need more and more servers
+1. Continuous Power 24/7
+2. More and More Space to keep more computers
+3. AC
+4. Internet Connection or Network Connection
+5. Install OS
+6. Security
+
+Cloud --> Amazon Web Services, Google Cloud Platform, Microsoft Azure, Alibaba, Oracle Cloud
+Private Cloud
+Public Cloud
+
+Europe(Stockholm) --> Region
+Mumbai Location
+For Latency related issues to be resolved web servers are created according thier geographical locations
+
+Latency --> Minimum amount of time for a signal to reach destination from its source is called latency.
+
+Regions --> 2 or more Availability Zones will make one region
+Availability Zones --> Data Center which is where our actual Virutal Machine/EC2 Instace is created.
+
+An AWS Region is a physical, independent geographic area where Amazon Web Services (AWS) clusters its data centers.
+
+Under one region there are multiple AZs (min 2 max 4 or 5)
+Within the same region; AZ will be seperated by some kilometers (100 kms).
+Why we have multiple AZs?
+in order to make our application highly Availabile if there is some problem then the other AZ will act as a mirror/backup.
+
+Edge Location: Holds cache or static data.
+AWS Edge Locations are small, globally distributed data centers placed closer to end-users than standard AWS Regions or Availability Zones. They help lower latency, speed up content delivery, and reduce traffic loads on origin servers
+
+dynamic feed --> according to the previous behaviour in the website the feed will be populated.
+
+Windows --> GUI --> Graphical User Interface
+Servers --> Application --> 
+
+Computer --> IP --> Internet Protocol, ANy IP enabled device we can be called as a system 
+Wireless Ear Pods --> IP
+Wireless Speakers --> IP
+Car Music Bluetooth --> IP
+
+Computer --> Calculation Data Storage Application Development Servers IP
+Humans --> Calculation Data Storage Names
+
+Charles Babage 1822
+1999 Year
+31-12-1999
+00-00-0000
+01-01-2000
+Y2K --> Check this out
+Date 1999
+
+Information Technology
+
+Data --> ljfahslkjhfsldkj  --> Useful data converted 
+Information --> I am Praveen
+Using Technology you will extract information from raw data
+
+Any raw data if gets converted into meaningful data it is called information, this can be done by using multiple techniques --> this is called Information Technology
+
+Bodaring
+Drop Location
+Age
+M/F
+Name
+Mobile
+
+EMIs 
+Salary
+Income
+
+Useful data should be retained
+Useless data should be deleted
+
+Technology
+
+
+CRUD operations
+
+Create
+Read
+Update
+Delete
+
+Unix --> Operatings Sytem -- for few systems Hardware is mandatory
+MacOS --> Apple Laptop
+Louis Torvalds  invented Linux using Unix Principles based on C Programming
+He also invented git
+
+
+Any software of our interest can be installed on our hardware.
+
+What is kernel
+software which helps to connect to Hardware or communicate between OS and Hardware.
+
+
+Applications --> softwares which we install (Teams, notepad++, webapplications like facebook.com, redbus.in)
+some software will run on some versions like java 21; if we dont have that java 17 it will not run.
+this is called dependency/utilities
+shell commands
+Kernel --> Which helps Operating System and Hardware to Communicate
+
+=============================================================================================
+wget --> 
+curl
+
+head -5 <filename> --> displays or prints first 5 lines in the file on to the screen.
+tail -5 <filename> --> displays or prints last 5 lines in the file on to the screen.
+
+grep --> used to find the keyword
+usage: grep <word to grep> <filename>
+
+
+[ec2-user@ip-172-31-37-2 ~]$ head -5 index.html.1
+About us
+About GeeksforGeeks:
+Company Profile and Brand:
+GeeksforGeeks is a comprehensive educational
+portal that empowers learners across domains—spanning
+[ec2-user@ip-172-31-37-2 ~]$ grep Brand index.html.1
+Company Profile and Brand:
+[ec2-user@ip-172-31-37-2 ~]$ head -5 index.html.1 | grep Brand index.html.1
+Company Profile and Brand:
+[ec2-user@ip-172-31-37-2 ~]$ tail -5 index.html.1 | grep Brand index.html.1
+Company Profile and Brand:
+[ec2-user@ip-172-31-37-2 ~]$
+
+
+Day 1: How Create to ec2 instance?
+open console.aws.amazon.com
+
+
+

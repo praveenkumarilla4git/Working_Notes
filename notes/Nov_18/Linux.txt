@@ -1,0 +1,168 @@
+Linux --> Linus Torvalds
+ls --> list of file and folders
+whoami --> gives the name of the user with which you logged in
+Hardware --> OS --> Kernel --> Shell --> Utilities --> Applications
+
+Linux --> Open Source --> meaning this Linux OS is avaialble for free in the internet.
+Git Linus Torvalds
+
+There are many Linux distributions in the market
+Linux Distributions --> Redhat, Ubuntu, Suse, Fedora etc...
+Linux + Utilities = Linux Distributions
+
+what they help us with? --> They package the Lunix OS/Kernel base into a new software download and install like plug and play with some useful utilities.
+
+software/os from these distributions is mostly free to download and install but the support they give is chargable. If the Redhat Enterprise version is purchased they will get support to fix the issues mostly on call.
+
+Linux --> Mostly no graphics --> Speed --> files -> no graphics --> security --> very very tough to get hacked --> high Performance --> this is prefered OS even to build super comper computers
+
+whoami 	--> username will be displayed
+ls 		--> list of files and folders
+mkdir <foldername> --> creates new folder with the given folder name
+touch 	--> creates a new file
+cd 		--> Change Directory cd <location/foldername>
+cd .. 	--> moves to one folder back
+pwd 	--> present working directory
+mv 		--> this renames the file/folder names
+users | groups | others
+ec2-user | DevOps	| others
+
+ls -l
+total 0
+d rwx r-x r-x . 3 ec2-user ec2-user 20 Nov  7 02:25 Lalitha
+- rw- r-- r-- . 1 ec2-user ec2-user  0 Nov  7 02:24 learn.txt
+
+clear --> clears the screen
+
+ls			--> list all files and folders
+ls -l		--> list all files and folders with the more long information like user permissions, time of creation/date modified (l = long)
+ls -lt 		--> displays order from latest down to old creation/modifed file (t = time)
+ls -ltr		--> to reverse the order from old creation/modifed down to latest (r = reverse)
+ls -ltra	--> along with above it displays hidden files as well (a=all)
+
+~ 		--> user
+# 		--> root
+chmod --> tomorrow
+
+[ec2-user@ip-172-31-26-248 ~]$ whoami
+
+What is utility or dependency:
+if we need to install a Application/software we may need some basic dependency or utility like java 21 etc .. this application will not work with java 17 this java dependecy is called as utility.
+
+What is shell:
+Kernel is like a software in itself which helps OS and Hardware to communicate/connect with.
+Kernel talks to OS via Shell commands
+Kernel needs shell --> it is a like a command base/programs
+along with the utilities this is Linux Distribution.
+
+uname -a --> Gives all the linux configuration information
+Linux ip-172-31-30-75.ec2.internal 6.18.56-126.188.amzn2023.x86_64 #2 SMP PREEMPT_DYNAMIC Tue Nov  3 13:24:21 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+
+clear --> Clears the screen
+
+cat --> write contents on to the files
+cat > devops.txt
+<write your file content> Press Control + D to save the file
+
+cat > --> create new file as well.
+
+cat >  --> creating content on the file without preserving earlier content.
+cat >> --> This command will preserve/retain old content and append new content at the bottom of the file.
+
+Control + d is the command to save.
+
+mv command is used to move files across folders and locations
+mv command is also used to rename the file/folder
+
+
+rm --> remove --> to delette files you can use this command.
+rm karthik.txt
+rm can be used to delete files. But cannot be used to delete folders.
+
+mkdir test
+if you want to delete the folder. You have to use the command rm -r
+rm -r <foldername>
+
+rm -r --> -r means recurssive.
+rm -rf --> -rf means recurssive and force which means if there are some files which are in open state and are in the usage or in any process but you still want to delete all those files present in that directory then use this command rm -rf f means force. You should be very cautious using this command.
+
+
+Absolute and Relative Paths
+Absolute --> /home/ec2-user/DevSecOps/test/
+Relative --> /home/ec2-user/DevSecOps/
+
+A --> B --> C
+
+Assignment:
+All commands covered till now
+Definition
+Examples
+EC2 
+Run
+Screenshots
+Folders
+cd
+
+=============================================
+cp command has 2 input arguments one is source and another is destination
+cp --> copy
+cp <source> and <destination>
+
+curl command is used to display all the contents of the website link on screen in linux
+wget command is used to download all the contents of the website link into your pwd
+
+head --> displays the contets of the file which are at the top. 
+head -2 <finename> --> displays the contents of the file which are at the top 2 lines only.
+tail --> displays the contents of the file which are at the bottom.
+tail -2 <finename> --> displays the contents of the file which are at the bottom 2 lines only.
+
+vi --> visually improved.
+vm editor 
+you will have 3 types of working modes
+esc 		--> mode	--> switch between modes
+: 			--> mode 	--> commands
+insert(i)	--> mode	--> insert the contents into the file
+
+
+to write contents into the file
+open the file --> vi <filename>
+it will be in esc mode, then you have to give i --> which tells we are going to write the contents into the file
+i --> insert
+paste the contents
+
+ls --> list of files and folders in the current path or the abosolute path given
+pwd --> present working directory
+cd --> change directory
+cd .. --> one step back from pwd
+mkdir --> make directory
+rm <filename> --> delete file
+rm -r <directory name> --> delete directory
+touch <filename> --> create a new file
+cat <filename> --> to view the content of the file
+cat > <filename> --> write the contents into the file and also we need to save that using cntrl+d
+head <filename> --> to display first few lines of the file
+tail <filename> --> to display last few lines of the file
+less <filename> --> to display some contents in a big file usually of less than that of the screen space occupied
+more <filename> -> to display some contents in a big file usually of more than that of the screen space occupied
+vi <filename>
+esc
+:
+i
+
+mkdir devops --> creates a new folder  with name devops
+cd devops --> move into the folder devops
+clear --> clears the screen
+touch newfile.txt --> creates a new file with the neme newfile.txt
+pwd --> present woking directory
+cd .. --> one step back form the current directory
+cd --> it moves to user home directory /home/ec2-user
+cd / --> it moves to user home directory "root" folder
+echo --> echo "Hi Lalitha" --> prints the text or content on screen
+echo --> echo "Hi Lalitha" > newfile.txt --> it goes inside the file.
+cat newfile.txt --> displays the content on to the screen
+cat > newfile.txt --> writes the contents on to the newfile.txt
+echo "Hi Lalitha" > file2.txt
+zcat --> zip cat --> meaning this command is used to check or display the contents of zip file
+You can create a new zip file by putting few files into .zip
+cp <source> <destination>
+

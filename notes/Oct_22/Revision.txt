@@ -1,0 +1,65 @@
+Software Development Life Cycle --> WaterFall Model --> Agile Model --> DevOps
+
+DevOps --> DevOps is a process which makes website or web applications or softwares -- secure, reliable and highly available for the end users by making code or code base transit between Developers, Tester/QA and Operations smoothly and without any friction using multiple devops tools to make the process automatically using automation techniques.
+
+Continuous Integration
+Continuous Deployment
+Continuous Monitoring
+
+
+Developer --> Program --> Own Laptop or Developer Laptop
+Dependencies 
+
+Customer:
+Barcode 
+Barcode Scanner 
+Details Update
+Program Code
+Database
+Inventory Count
+Bill Generation
+Bill QR Code
+Bill Paid
+Printer --> Printer Supporting Software --> bill print
+
+
+Packages --> Predefined Functions present in python program
+Developer will import packages into program
+dependecies install 
+Program
+then Program is successful
+
+"It works on my system"
+
+Same Configuration -> Same OS --> Same Environment  ---> Same as Developers machine
+
+
+Code --> Cloud
+System --> Cloud
+Software --> Cloud
+
+
+IP
+Username
+Password
+
+20 people share
+
+AWS Azure GCP
+
+Rent Model
+Windows Vs Linux
+LINUX
+AWS
+
+
+
+Laptop
+email id
+Debit Card --> 2rs cut 2 days return or Credit Card --> International Transactions Enable
+ID Proof --> PAN Card or Voter ID or Aadhar
+
+
+AWS Free tier Account for 6 months --> Creation
+Linux Vs Windows
+Linux Practice Python Program Web Application

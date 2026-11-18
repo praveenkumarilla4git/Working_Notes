@@ -1,0 +1,65 @@
+console.aws.amazon.com
+click on sign in using root user email button
+select root user
+praveenkumarilla@zohomail.in
+Click Next
+Give Password
+Click Sign In
+In Search Box search for EC2 or Recent Visited --> EC2
+Go to the Dashboard (on the left side menu)
+Click on Instances or Running Instances
+Click on Launch Instances Button which is in orange color
+Name:			MyAppServer
+OS:				Amazon Linux It must be free tier eligible
+AMI:			Amazon Linux 2023 kernel-6.18 AMI free tier eligible
+Instace Type:	t3.micro free tier eligible
+Key Pair:		
+How we create a key-pair?
+ssh-keygen -f <filename>
+.pub --> Public Key (batch06keys)
+.pem --> Private Key
+Public Key --> we need to import in AWS
+select batch06keys from drop down
+Security Group --> Select Existing Security Group
+Batch06sg
+everything else default leave as it is
+Click On Launch Instance Button which is in orange color on the right side
+Go to EC2 Dashboard and go to Instances Running section
+
+We will have our own Amazon Linux Machine Free tier eligible EC2 instance created
+select the running instance
+Copy Public Key
+Go to the Windows Folder where you have kept your Private Key
+Right click on empty area in the folder -->  show more options -> click on Open git bash here
+Open Git Bash
+ssh -i batch06keys ec2-user@<public-ip>
+ssh -i batch06keys ec2-user@13.60.167.80
+Public IP is found in EC2 Instace (Public IPv4 address) Click on Instnace ID to get the Public IPv4 address
+
+
+Linux:
+ls --> List the files and folders
+touch --> to create a file 
+touch hi.txt
+ls
+cat hi.txt
+vi hi.txt
+i --> For INSERT Mode
+write text
+esc
+:
+save and quit
+wq
+cat hi.txt
+exit
+
+To terminate the EC2 instance
+Go to EC2 Dashboard
+select EC2 Instance which is running
+Instance State --> Terminate
+
+Logout AWS Console
+
+
+
+

@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="Q_1jd2EPjNGc_tD11rDY">
+    <mxGraphModel dx="719" dy="489" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6w7Jceb7iGF0WOY4IPUa-1" parent="1" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.box;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="150" width="200" x="270" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="6w7Jceb7iGF0WOY4IPUa-2" parent="1" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.lock;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="50" width="39" x="350" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="6w7Jceb7iGF0WOY4IPUa-3" parent="1" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.key_permissions;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="50" width="26" x="190" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="6w7Jceb7iGF0WOY4IPUa-4" parent="1" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.laptop;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="114" width="190" x="300" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="6w7Jceb7iGF0WOY4IPUa-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="ssh-keygen -f batch06keys" vertex="1">
+          <mxGeometry height="30" width="175" x="315" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="6w7Jceb7iGF0WOY4IPUa-6" parent="1" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.lock;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="50" width="39" x="553.5" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="6w7Jceb7iGF0WOY4IPUa-7" parent="1" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.key_permissions;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="50" width="26" x="566.5" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="6w7Jceb7iGF0WOY4IPUa-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Public Key --&amp;gt;&amp;nbsp;batch06keys.pub&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="200" x="320" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="6w7Jceb7iGF0WOY4IPUa-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Private Key --batch06keys" vertex="1">
+          <mxGeometry height="30" width="190" x="325" y="710" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
