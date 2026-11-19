@@ -1,0 +1,80 @@
+whoami --> ec2-user
+vi --> visually improved
+vi demofile.txt
+esc
+if the line is already present just take the cursor to that line and press 'yy'
+then 'pp' it will copy (yy) and paste (pp)
+
+yy --> copy
+pp --> paste
+dd --> delete
+
+ls 					--> list files and folders
+mkdir devops 		--> creates new directory with the name devops
+pwd					--> present working directory
+touch newfile.txt	--> creates new file with the name newfile.txt
+ls 					--> list the files and folders in the present working directory
+mv newfile.txt devops/	--> creates newfile.txt in devops/ folder
+ls -l 					--> list long with more details lists the files and folders
+mv devops_file.txt cloud/	--> renames the filename and moves the file across the folders
+rm lalitha.txt --> deletes lalitha.txt file
+rm testing/ --> if testing/ is a folder it will throw error
+rm -r testing/ --> 'r' means recurssive --> used to delete the folder and its contents
+rm -rf testing/ --> if the testing/ folder has contents which are being used elsewhere are forced to delete. if f is not used then it will stop when the files present in testing/ is open.
+cat cloud/devops_file.txt --> displays whole file contents
+cat > cloud/devops_file.txt --> writes contents into the file
+cat cloud/devops_file.txt --> displays the contents of the file
+ls cloud/ --> relative path and lsiting its contents
+cd / --> change directory to root
+cd /home/ec2-user/cloud/ --> change directory to this absolute path
+echo "Hello Lalitha" --> print message on to the screen.
+echo "Hello Lalitha" > cloud/demofile.txt  --> saves the message on to the cloud/demofile.txt
+cat cloud/demofile.txt --> displays the contents of the mentioned file
+vi cloud/demofile.txt  --> enter vi editor
+	3 modes:
+	esc
+	:
+	insert
+head cloud/demofile.txt --> displays first 10 lines
+head -2 cloud/demofile.txt --> displays only first 2 lines
+tail cloud/demofile.txt --> displays last 10 lines
+tail -2 cloud/demofile.txt --> displays only last 2 lines
+less <filename>
+more <filename>
+history	 --> displays already used commands
+
+cp <source> <destination>
+cp devops/newfile.txt cloud/ 	--> copies the newfile.txt from devops/ directory to cloud/
+cp devops/newfile.txt .			--> copies the devops/newfile to current working directory or pwd '.' is the important input here this acts as destination for the cp command and it tells it is the current working directory
+
+wc --> word count --> number of lines | Number of words | Number of bytes
+
+Hard Link | Soft Links
+In Linux, hard links and soft links (symbolic links) are two ways to create references to files on a filesystem. While a hard link acts as an additional filename pointing directly to the underlying file data on the disk, a soft link acts like a shortcut that points to the original file's path
+
+softlink hardlink activity:
+mkdir hlsl
+   77  cd hlsl/
+   78  ls
+   79  touch test_devops_file.txt
+   80  ls
+   81  pwd
+   82  ls
+   83  echo "I am soft link" > test_devops_file.txt 
+   84  cat test_devops_file.txt 
+   85  pwd
+   86  cd
+   87  pwd
+   88  ln -s /home/ec2-user/hlsl/devops_file.txt
+   89  touch /home/ec2-user/hlsl/devops_file2.txt
+   90  echo "I am soft Link" > /home/ec2-user/hlsl/devops_file2.txt
+   91  cat /home/ec2-user/hlsl/devops_file2.txt
+   92  ln -s /home/ec2-user/hlsl/devops_file2.txt
+   93  ls
+   94  cat devops_file2.txt 
+   95  pwd
+   96  ls /home/ec2-user/hlsl/
+   97  mv /home/ec2-user/hlsl/devops_file2.txt devops_file3.txt
+   98  ls /home/ec2-user/hlsl/
+   99  cat devops_file2.txt 
+  100  ls
