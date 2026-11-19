@@ -54,27 +54,27 @@ In Linux, hard links and soft links (symbolic links) are two ways to create refe
 
 softlink hardlink activity:
 mkdir hlsl
-   77  cd hlsl/
-   78  ls
-   79  touch test_devops_file.txt
-   80  ls
-   81  pwd
-   82  ls
-   83  echo "I am soft link" > test_devops_file.txt 
-   84  cat test_devops_file.txt 
-   85  pwd
-   86  cd
-   87  pwd
-   88  ln -s /home/ec2-user/hlsl/devops_file.txt
-   89  touch /home/ec2-user/hlsl/devops_file2.txt
-   90  echo "I am soft Link" > /home/ec2-user/hlsl/devops_file2.txt
-   91  cat /home/ec2-user/hlsl/devops_file2.txt
-   92  ln -s /home/ec2-user/hlsl/devops_file2.txt
-   93  ls
-   94  cat devops_file2.txt 
-   95  pwd
-   96  ls /home/ec2-user/hlsl/
-   97  mv /home/ec2-user/hlsl/devops_file2.txt devops_file3.txt
-   98  ls /home/ec2-user/hlsl/
-   99  cat devops_file2.txt 
-  100  ls
+cd hlsl/
+ls
+touch test_devops_file.txt
+ls
+pwd
+ls
+echo "I am soft link" > test_devops_file.txt 
+cat test_devops_file.txt 
+pwd
+cd
+pwd
+ln -s /home/ec2-user/hlsl/devops_file.txt
+touch /home/ec2-user/hlsl/devops_file2.txt
+echo "I am soft Link" > /home/ec2-user/hlsl/devops_file2.txt
+cat /home/ec2-user/hlsl/devops_file2.txt
+ln -s /home/ec2-user/hlsl/devops_file2.txt
+ls
+cat devops_file2.txt 
+pwd
+ls /home/ec2-user/hlsl/
+mv /home/ec2-user/hlsl/devops_file2.txt devops_file3.txt
+ls /home/ec2-user/hlsl/
+cat devops_file2.txt 
+ls
