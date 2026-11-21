@@ -154,4 +154,62 @@ Linux
 LINUX
 
 
+[ec2-user@ip-172-31-24-161 ~]$ cat Linux19.txt | grep linux
+[ec2-user@ip-172-31-24-161 ~]$ cat Linux19.txt | grep Linux
+In Linux, hard links and soft links (symbolic links) are two ways to create references to files on a filesystem. While a hard link acts as an additional filename pointing directly to the underlying file data on the disk, a soft link acts like a shortcut that points to the original file's path
+wget https://raw.githubusercontent.com/praveenkumarilla4git/Working_Notes/refs/heads/main/notes/Nov_19/Linux19.txt
+curl https://raw.githubusercontent.com/praveenkumarilla4git/Working_Notes/refs/heads/main/notes/Nov_19/Linux19.txt
+cat Linux19.txt | grep -v <word to search:mv>
+cat Linux19.txt | grep mv
+cat Linux19.txt | grep -n mv
+Linux
+[ec2-user@ip-172-31-24-161 ~]$ cat Linux19.txt | grep LINUX
+LINUX
+[ec2-user@ip-172-31-24-161 ~]$ cat Linux19.txt | grep linux
+[ec2-user@ip-172-31-24-161 ~]$ cat Linux19.txt | grep -i linux
+In Linux, hard links and soft links (symbolic links) are two ways to create references to files on a filesystem. While a hard link acts as an additional filename pointing directly to the underlying file data on the disk, a soft link acts like a shortcut that points to the original file's path
+wget https://raw.githubusercontent.com/praveenkumarilla4git/Working_Notes/refs/heads/main/notes/Nov_19/Linux19.txt
+curl https://raw.githubusercontent.com/praveenkumarilla4git/Working_Notes/refs/heads/main/notes/Nov_19/Linux19.txt
+cat Linux19.txt | grep -v <word to search:mv>
+cat Linux19.txt | grep mv
+cat Linux19.txt | grep -n mv
+Linux
+LINUX
+[ec2-user@ip-172-31-24-161 ~]$ 
+
+
+[ec2-user@ip-172-31-24-161 ~]$ cat Linux19.txt | grep linux
+[ec2-user@ip-172-31-24-161 ~]$ cat Linux19.txt | grep Linux
+In Linux, hard links and soft links (symbolic links) are two ways to create references to files on a filesystem. While a hard link acts as an additional filename pointing directly to the underlying file data on the disk, a soft link acts like a shortcut that points to the original file's path
+wget https://raw.githubusercontent.com/praveenkumarilla4git/Working_Notes/refs/heads/main/notes/Nov_19/Linux19.txt
+curl https://raw.githubusercontent.com/praveenkumarilla4git/Working_Notes/refs/heads/main/notes/Nov_19/Linux19.txt
+cat Linux19.txt | grep -v <word to search:mv>
+cat Linux19.txt | grep mv
+cat Linux19.txt | grep -n mv
+Linux
+[ec2-user@ip-172-31-24-161 ~]$ cat Linux19.txt | grep LINUX
+LINUX
+[ec2-user@ip-172-31-24-161 ~]$ cat Linux19.txt | grep linux
+[ec2-user@ip-172-31-24-161 ~]$ cat Linux19.txt | grep -i linux
+In Linux, hard links and soft links (symbolic links) are two ways to create references to files on a filesystem. While a hard link acts as an additional filename pointing directly to the underlying file data on the disk, a soft link acts like a shortcut that points to the original file's path
+wget https://raw.githubusercontent.com/praveenkumarilla4git/Working_Notes/refs/heads/main/notes/Nov_19/Linux19.txt
+curl https://raw.githubusercontent.com/praveenkumarilla4git/Working_Notes/refs/heads/main/notes/Nov_19/Linux19.txt
+cat Linux19.txt | grep -v <word to search:mv>
+cat Linux19.txt | grep mv
+cat Linux19.txt | grep -n mv
+Linux
+LINUX
+[ec2-user@ip-172-31-24-161 ~]$ 
+
+linux
+Linux
+LINUX
+LinuX
+
+-ivncr
+i --> case sensitive
+v --> inverted other keyword
+n --> line number
+c --> count
+
 
