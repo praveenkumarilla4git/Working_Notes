@@ -78,3 +78,54 @@ mv /home/ec2-user/hlsl/devops_file2.txt devops_file3.txt
 ls /home/ec2-user/hlsl/
 cat devops_file2.txt 
 ls
+======
+[ec2-user@ip-172-31-31-61 ~]$ df
+Filesystem       1K-blocks    Used Available Use% Mounted on
+devtmpfs              4096       0      4096   0% /dev
+tmpfs               467480       0    467480   0% /dev/shm
+tmpfs               186996     452    186544   1% /run
+efivarfs               128       3       121   3% /sys/firmware/efi/efivars
+/dev/nvme0n1p1     8310764 1720124   6590640  21% /
+tmpfs               467484       0    467484   0% /tmp
+/dev/nvme0n1p128     10202    1318      8884  13% /boot/efi
+tmpfs                93496       0     93496   0% /run/user/1000
+
+
+du command
+ps
+man command --> manual
+man ps
+ps -e --> everything
+          ps -ef --> everything and full format
+          ps -eF --> everything and extra full format
+          ps -ely
+
+PID --> process ID
+kill -9 PID --> force kill
+kill PID --> normal
+free  --> How much amount of storage is available on our machine
+free -h 
+
+===================
+vi
+esc :noh --> no highlight
+====================
+ls -l
+cd ..
+mv <source> <destination>
+mv devsecops.txt devops.txt --> rename
+mv inside the same folder will work as rename
+cp <source> <destination>
+wget https://raw.githubusercontent.com/praveenkumarilla4git/Working_Notes/refs/heads/main/notes/Nov_19/Linux19.txt
+
+curl https://raw.githubusercontent.com/praveenkumarilla4git/Working_Notes/refs/heads/main/notes/Nov_19/Linux19.txt
+
+curl --> on screen display
+wget --> downloads the file
+
+cat <filename>
+piping
+pipe has input and output if we attach another pipe to first pipe then output of first pipe will be input to the second pipe
+
+
+
