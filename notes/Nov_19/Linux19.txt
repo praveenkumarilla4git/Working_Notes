@@ -127,5 +127,31 @@ cat <filename>
 piping
 pipe has input and output if we attach another pipe to first pipe then output of first pipe will be input to the second pipe
 
+grep is used to search the word
+grep -n <word to search>
+displays all the lines in the file which has the <word to search> with their line numbers
+cat Linux19.txt | grep -v <word to search:mv>
+v --> inverted meaning
+it will display or print all the lines which do not have <word to search>
+
+cat Linux19.txt | grep mv
+mv newfile.txt devops/  --> creates newfile.txt in devops/ folder
+mv devops_file.txt cloud/       --> renames the filename and moves the file across the folders
+mv /home/ec2-user/hlsl/devops_file2.txt devops_file3.txt
+mv <source> <destination>
+mv devsecops.txt devops.txt --> rename
+mv inside the same folder will work as rename
+
+cat Linux19.txt | grep -n mv
+17:mv newfile.txt devops/       --> creates newfile.txt in devops/ folder
+19:mv devops_file.txt cloud/    --> renames the filename and moves the file across the folders
+77:mv /home/ec2-user/hlsl/devops_file2.txt devops_file3.txt
+115:mv <source> <destination>
+116:mv devsecops.txt devops.txt --> rename
+117:mv inside the same folder will work as rename
+
+Linux
+LINUX
+
 
 
