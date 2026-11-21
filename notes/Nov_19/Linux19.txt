@@ -212,4 +212,167 @@ v --> inverted other keyword
 n --> line number
 c --> count
 
+cut and aws
+in windows: C:\Users but in Linux, we have user infomation in /etc/passwd file
+go to linux home/ec2-user/
+then cat /etc/passwd
+here word by word is seperated by :
+seperator here is :
+clear --> Clears the screen
+cat /etc/passwd --> displays the contents of the file /etc/passwd on the screen
+we then noticed the words are seperated (or delimited) :
+now I want to copy that file /etc/passwd to my pwd
+apply this below command
+
+cp /etc/passwd .
+Part	Meaning
+cp	Copy command
+/etc/passwd	Source file
+.	Destination (current directory)
+
+/home/ec2-user/passwd
+ls
+passwd
+cut -d ":" -f1 /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+
+so i will use cut command and give the below command
+cut -d ":" -f1 passwd
+
+How cut extracts fields
+FIELD 1
+
+root
+
+:
+
+:
+
+:
+
+:
+
+:
+
+:
+
+x : 0 : 0 : root : /root : /bin/bash
+output root
+
+so our output will be like this:
+
+root
+bin
+daemon
+adm
+lp
+sync
+shutdown
+halt
+mail
+operator
+games
+ec2-user
+
+Try these additional commands
+These will help you understand cut better.
+Command	What it does
+cut -d ":" -f1 /etc/passwd	Displays usernames
+cut -d ":" -f3 /etc/passwd	Displays user IDs (UIDs)
+cut -d ":" -f6 /etc/passwd	Displays home directories
+cut -d ":" -f7 /etc/passwd	Displays login shells
+cut -d ":" -f1,3 /etc/passwd	Displays usernames and UIDs
+cut -d ":" -f1-3 /etc/passwd	Displays first three fields
+
+practice:
+# 1. Display all usernames
+cut -d ":" -f1 /etc/passwd
+
+# 2. Display usernames and user IDs
+cut -d ":" -f1,3 /etc/passwd
+
+# 3. Find only the ec2-user entry
+grep "^ec2-user:" /etc/passwd
+
+Interview question:
+
+What is the difference between cut, awk, and grep in Linux?
+- cut – Extracts specific columns or fields.
+- awk – Processes and manipulates structured text and columns.
+- grep – Searches for matching patterns or text.
+
+cut -d ":" -f1,2,3 /etc/passwd
+cut -d ":" -f1,3 /etc/passwd
+
+ls --> now i should see passwd file in my list
+cut -d ":" -f1 /etc/passwd
+Now I have to print out list of all users present before : and do not want the rest
+so we call f here as fragment
+
+1. What is AWK?
+awk is a Linux text-processing command used to read files line by line, split data into fields, filter records, and perform operations on those fields.
+
+cut → Extracts specific fields.
+grep → Searches for matching text.
+awk → Extracts, filters, calculates, and formats data.
+
+awk 'pattern { action }' filename
+
+awk '{print $1}' /etc/passwd
+
+$1 = First field
+$2 = Second field
+$3 = Third field
+$0 = Entire line
+**** By default, AWK considers spaces and tabs as field separators.
+**** Notice that AWK separates the output fields with spaces by default.
+
+previously we did this: cut -d ":" -f1,2,3 /etc/passwd
+now we can execute same usign awk like below:
+awk -F ":" '{print $1,$2,$3}' /etc/passwd
+
+
+echo "/etc/passwd" | awk -F "/" '{print $NF}'
+
+awk -F ':' '{print $1}' /etc/passwd
+awk -F ':' '$1 == "ec2-user" {print $0}' /etc/passwd
+output: ec2-user:x:1000:1000:EC2 Default User:/home/ec2-user:/bin/bash
+
+awk -F 'delimiter' 'condition { action }' filename
+
+# Find ec2-user
+awk -F ':' '$1 == "ec2-user" {print $0}' /etc/passwd
+
+# Find users with UID greater than 500
+awk -F ':' '$3 > 500 {print $1,$3}' /etc/passwd
+
+# Find users with UID equal to 1000
+awk -F ':' '$3 == 1000 {print $1,$3}' /etc/passwd
+
+awk -F ':' '$3 > 500 && $3 < 1000 {print $1,$3}' /etc/passwd
+awk -F ':' '$3 == 1000 || $3 == 65534 {print $1,$3}' /etc/passwd
+awk -F ':' '$3 != 1000 {print $1,$3}' /etc/passwd
+awk -F ':' '$3 >= 994 && $3 <= 1000 {print $1,$3}' /etc/passwd
+
+
+
+.tar .gz
+
+tar -czf
+tar -czf linux.tar.gz  Linux19.txt devops.txt
+c --> Creating
+z --> .gz format
+f --> file names
+
+Extension	Meaning	Purpose
+.tar	Tape Archive	Combines multiple files into one archive
+.gz	Gzip	Compresses a file
+.tar.gz	Tar + Gzip	Combines multiple files and compresses the archive
+
+tar → Packs files together.
+gzip → Compresses files to reduce size.
+tar.gz → Packs and compresses files together.
+
+
+
 
